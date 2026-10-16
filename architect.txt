@@ -1,0 +1,359 @@
+================================================================================
+          CLINICAL MEDICAL RAG SYSTEM - SYSTEM ARCHITECTURE & TECH STACK
+================================================================================
+Generated: October 2026
+System: Multimodal Clinical Retrieval-Augmented Generation (RAG) System
+
+--------------------------------------------------------------------------------
+1. HIGH-LEVEL ARCHITECTURAL OVERVIEW
+--------------------------------------------------------------------------------
+
+The Clinical Medical RAG system is an enterprise-grade retrieval and clinical
+decision-support application designed specifically for complex medical guidelines,
+comorbidity-based treatment protocols, and multi-tier prescription matrices.
+
+The pipeline is split into 6 core operational stages:
+  1. Multimodal Document Ingestion & Parsing (Extraction)
+  2. Structure-Aware & Matrix Chunking
+  3. Dual-Store Hybrid Indexing (Dense Vector + Sparse Keyword)
+  4. Reciprocal Rank Fusion (RRF) Retrieval & Dynamic Metadata Sync
+  5. Grounded LLM Generation & Deterministic Clinical Range Evaluation
+  6. Real-Time Chunk Inspection, Auditing & User Interface
+
+```
++-------------------------------------------------------------------------------+
+|                             DATA INGESTION                                    |
+|  PDF, DOCX, DOC, XLSX, CSV, TXT, MD, PNG, JPG (Guidelines & Prescription Docs) |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+|                      STAGE 1: MULTI-FORMAT EXTRACTION                         |
+|  * IBM Docling (ONNX RapidOCR) -> High-fidelity PDF layout & table extraction  |
+|  * python-docx                 -> Direct Word table preservation              |
+|  * pandas / openpyxl          -> Excel & CSV tabular extraction               |
+|  * PyPDF / pdfplumber          -> Fast fallback & page coordinate mapping     |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+|                   STAGE 2: STRUCTURE-AWARE CHUNKING                           |
+|  * Fork A: Tabular Prescription Matrices (Forward-fill, clinical state chunks)|
+|  * Fork B: Hierarchical Prose & Sections (Breadcrumb tag prepending)          |
+|  * Exact page provenance mapping (per-page text locator)                      |
++-------------------------------------------------------------------------------+
+                                      |
+                   +------------------+------------------+
+                   v                                     v
++------------------------------------+ +------------------------------------+
+|   STAGE 3A: DENSE VECTOR INDEX     | |    STAGE 3B: SPARSE KEYWORD INDEX   |
+| * ChromaDB Persistent Client       | | * rank_bm25 (BM25Okapi algorithm)   |
+| * Distance: Cosine Similarity      | | * Partitioned by disease/document   |
+| * Embeddings: Google gemini-       | | * In-memory execution               |
+|   embedding-001 (768-dim)          | | * Serialized store: bm25_store.pkl  |
+| * Fallback: Deterministic SHA-256  | |                                    |
+|   coordinate vectors (768-dim)     | |                                    |
++------------------------------------+ +------------------------------------+
+                   \                                     /
+                    \                                   /
+                     v                                 v
++-------------------------------------------------------------------------------+
+|                      STAGE 4: HYBRID RETRIEVAL & FUSION                       |
+|  * Reciprocal Rank Fusion (RRF Score = 1 / (60 + Rank))                       |
+|  * Multi-query candidate pooling (Dense Semantic + Sparse Keyword)            |
+|  * Dynamic Canonical Metadata Sync (resolves fresh metadata from ChromaDB)     |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+|              STAGE 5: CLINICAL GENERATION & RANGE RESOLVER                    |
+|  * Online LLM: Google GenAI Client (gemini-2.5-pro / gemini-2.5-flash)        |
+|    - Temperature: 0.0, Grounded Prompt, 8-Column Markdown Table Standard     |
+|  * Offline Deterministic Engine: Dynamic numerical clinical range evaluator   |
+|    - Evaluates HRCT (0-8, 9-15, >15) & SpO2 (>94, 90-94, <90) boundaries      |
++-------------------------------------------------------------------------------+
+                                      |
+                                      v
++-------------------------------------------------------------------------------+
+|                   STAGE 6: FRONTEND & INSPECTION AUDITING                     |
+|  * React 19 + TypeScript + Vite 8 + Tailwind CSS v3                           |
+|  * Step 1: Multi-format File Ingestion & Protocol Management                  |
+|  * Step 2: Clinical Intake & 8-Column Prescriptive Matrix Table               |
+|  * Step 3: Real-Time Chunk Inspector & Page Provenance Audit Tool             |
++-------------------------------------------------------------------------------+
+```
+
+--------------------------------------------------------------------------------
+2. PROCESS-BY-PROCESS TECHNICAL SPECIFICATION
+--------------------------------------------------------------------------------
+
+================================================================================
+PROCESS 1: DOCUMENT EXTRACTION & INGESTION
+================================================================================
+Purpose:
+  Ingest unstructured and semi-structured documents in diverse medical formats
+  while retaining complete table structures, headers, and page numbers.
+
+File Extensions Supported:
+  .pdf, .docx, .doc, .xlsx, .xls, .csv, .txt, .md, .png, .jpg, .jpeg
+
+Technologies Used:
+  - IBM Docling (`docling` >= 2.0.0):
+    * Primary PDF & Image layout parser.
+    * Uses `DocumentConverter` with `PdfFormatOption`.
+    * Converts complex multi-column PDFs into unified Markdown with preserved
+      grid tables and headers.
+  - RapidOCR via ONNX Runtime (`rapidocr-onnxruntime`):
+    * Embedded OCR backend used by Docling for scanned pages, clinical charts,
+      and non-selectable PDF text.
+  - python-docx (`python-docx`):
+    * Native Microsoft Word parser.
+    * Extracts paragraphs, headings, and table structures directly without
+      requiring external office software or headless conversion.
+    * Parses nested cells and converts tables to structured Markdown grids.
+  - pandas (`pandas` >= 2.2.0) & openpyxl (`openpyxl` >= 3.1.2):
+    * Tabular parsing for .xlsx, .xls, and .csv files.
+    * Disambiguates duplicate headers and converts sheets to matrix format.
+  - PyPDF (`pypdf` >= 4.3.0) & pdfplumber (`pdfplumber` >= 0.11.0):
+    * Rapid fallback text extractor.
+    * Generates per-page exact character maps used to dynamically verify the
+      page number of extracted text chunks.
+  - Native Python Stream Readers:
+    * UTF-8 stream reader for markdown (.md) and plaintext (.txt) inputs.
+
+Source Files:
+  - `backend/core/parser.py` (`StructureAwareParser`)
+  - `backend/main.py` (`POST /api/v1/ingest`)
+
+================================================================================
+PROCESS 2: STRUCTURE-AWARE CHUNKING
+================================================================================
+Purpose:
+  Preserve semantic clinical relationships without splitting table rows,
+  losing comorbidity context, or breaking dosage columns.
+
+Architecture: Dual-Fork Chunking Engine
+
+  FORK A: Tabular Prescription Matrices (`chunk_type: table_matrix`)
+    - Identifies Markdown/Docx prescription tables.
+    - Resolves merged cells: Forward-fills sparse category, stage, and comorbidity
+      columns so every single row retains the full patient context.
+    - Serializes each row into a standardized semantic matrix chunk:
+      "Prescription Matrix: Clinical Stage: [Stage] | Disease: [Name] |
+       Medicine: [Drug] | Dose: [Dose] | Anupana: [Vehicle] | Page: [P]"
+    - Header Disambiguation: Prevents pandas duplicate column crashes
+      when documents have multi-level or blank header rows.
+
+  FORK B: Hierarchical Prose Sections (`chunk_type: prose_narrative`)
+    - Markdown Header Depth Tracking: Tracks hierarchy (`#`, `##`, `###`, `####`).
+    - Contextual Breadcrumb Tagging: Prepends navigation trail to chunks
+      (e.g., `[Guideline > Respiratory Infection > Comorbidities > Diabetes Mellitus]`).
+    - Section-bounded splitting: Target ~1000 characters with 200 character
+      sliding window overlap, strictly keeping paragraphs and inline tables intact.
+
+  Dynamic Provenance Tracking:
+    - Scans every generated chunk against the document's page-level text index.
+    - Dynamically assigns the exact page number (1-indexed) based on text match.
+
+Chunk Metadata Schema:
+  - `chunk_id`: Unique identifier (`{disease}_{chunk_type}_{index}`)
+  - `disease`: Target medical condition or document title
+  - `section_title`: Active heading or table title
+  - `chunk_type`: `table_matrix` or `prose_narrative`
+  - `page_number`: Exact source page number (1-indexed)
+  - `source_doc`: Original file name
+  - `breadcrumbs`: Full hierarchical section path
+  - `tokens_approx`: Estimated token length (char count // 4)
+
+Source Files:
+  - `backend/core/parser.py` (`_chunk_tabular_document`, `_chunk_markdown_document`)
+
+================================================================================
+PROCESS 3: HYBRID INDEXING & PERSISTENT STORAGE
+================================================================================
+Purpose:
+  Provide dual-index retrieval combining semantic concept understanding with
+  exact medical terminology / drug name matching.
+
+Technologies Used:
+
+  1. Dense Vector Store (Semantic Index):
+     - Engine: ChromaDB (`chromadb` >= 0.5.5) using `PersistentClient`.
+     - Distance Metric: Cosine Similarity (`"hnsw:space": "cosine"`).
+     - Storage Path: `backend/data/chroma_db/`.
+     - Embeddings:
+       * Online Primary: Google Gemini `gemini-embedding-001` (768 dimensions)
+         via `google-genai` SDK.
+       * Offline Fallback: Deterministic 768-dimensional SHA-256 coordinate
+         hashing (`_generate_fallback_vector`), L2-normalized.
+         Enables complete pipeline operation, testing, and search even before
+         an API key is configured.
+
+  2. Sparse Keyword Store (Exact Match Index):
+     - Engine: `rank_bm25` >= 0.2.2 (`BM25Okapi`).
+     - Vocabulary & Tokenization: RegEx word-boundary tokenization with
+       lowercasing and punctuation removal.
+     - Partitioning: Sub-indices keyed by disease name to support isolated or
+       cross-document search.
+     - Storage Path: In-memory runtime cache persisted to `backend/data/bm25_store.pkl`.
+
+Source Files:
+  - `backend/core/database.py` (`HybridSearchEngine`)
+
+================================================================================
+PROCESS 4: HYBRID RETRIEVAL & RANK FUSION
+================================================================================
+Purpose:
+  Retrieve the most clinically relevant chunks by combining dense semantic
+  search and sparse keyword search without bias.
+
+Algorithm: Reciprocal Rank Fusion (RRF)
+  - Formula: RRF_Score(d) = SUM_m [ 1 / (k + rank_m(d)) ] where k = 60.
+  - Combines:
+    * Top-K Dense Vector matches from ChromaDB.
+    * Top-K Sparse BM25 matches from BM25Okapi.
+  - Prevents score scale mismatches between cosine similarity and BM25 scores.
+
+Dynamic Canonical Metadata Synchronization:
+  - Fetches the canonical, un-truncated chunk metadata and source page numbers
+    directly from ChromaDB using retrieved IDs.
+  - Ensures accurate citation and page attribution even if sparse caches drift.
+
+Multi-Document Query Routing:
+  - Filters by disease metadata if specified by the user or clinical form.
+  - Executes cross-collection discovery if the query covers multi-disease
+    or general guidelines.
+
+Source Files:
+  - `backend/core/database.py` (`hybrid_search`)
+
+================================================================================
+PROCESS 5: CLINICAL REASONING & GENERATION
+================================================================================
+Purpose:
+  Synthesize retrieved excerpts into grounded, non-hallucinatory clinical
+  prescriptions formatted in an 8-column medical standard.
+
+Technologies Used:
+
+  1. Google GenAI Client (`google-genai` >= 0.1.1):
+     - Model: `gemini-2.5-pro` (fallback: `gemini-2.5-flash`).
+     - Parameters: `temperature = 0.0` (zero randomness for clinical accuracy).
+     - Strict System Instruction:
+       * Grounded strictly in retrieved context.
+       * Explicit prohibition against hallucinated drugs or external medical bias.
+       * If information is missing from chunks, must state "Not specified in document".
+       * Mandates the exact 8-column Markdown table standard:
+         | MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL |
+         | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |
+
+  2. Deterministic Clinical Range Evaluator (Offline / Hybrid Fallback):
+     - Technology: Regex-based dynamic clinical range extractor (`re`).
+     - Purpose: Dynamically evaluate clinical numeric queries (e.g. "HRCT score 5",
+       "HRCT 0 to 8", "SpO2 99%", "SpO2 above 94%") against table thresholds.
+     - Clinical Threshold Logic:
+       * HRCT: 0-8 (Mild / Stage I), 9-15 (Moderate / Stage II), >15 (Severe / Stage III).
+       * SpO2: >94% (Mild / Normal), 90-94% (Moderate), <90% (Severe).
+     - No hardcoded answers: Dynamically scans retrieved prescription matrix
+       chunks matching the evaluated severity stage and constructs the 8-column
+       prescription table.
+
+Source Files:
+  - `backend/core/pipeline.py` (`ClinicalRAGPipeline`)
+
+================================================================================
+PROCESS 6: AUDITING, INSPECTION & USER INTERFACE
+================================================================================
+Purpose:
+  Provide clinical users and developers with complete transparency into the
+  ingestion, chunking, retrieval, and prescribing processes.
+
+Backend REST API:
+  - Framework: FastAPI (`fastapi` >= 0.115.0) on Uvicorn ASGI server.
+  - Validation: Pydantic v2 (`pydantic` >= 2.8.0, `pydantic-settings` >= 2.4.0).
+  - Endpoints:
+    * `POST /api/v1/ingest`: Multipart upload supporting 11 file formats.
+    * `POST /api/v1/query`: Runs hybrid RAG query with patient parameters.
+    * `GET /api/v1/diseases`: Lists indexed documents and chunk statistics.
+    * `GET /api/v1/inspect/chunks`: Returns indexed chunks, metadata, breadcrumbs,
+      and page mappings for real-time audit.
+    * `DELETE /api/v1/diseases/{disease_name}`: Deletes document indexes.
+    * `POST /api/v1/reset`: Clears all ChromaDB and BM25 storage.
+
+Frontend Client Stack:
+  - Core: React 19 (`react` ^19.2.8, `react-dom` ^19.2.8) with TypeScript (`typescript` ~6.0.2).
+  - Build Tool: Vite 8 (`vite` ^8.3.0).
+  - Styling: Tailwind CSS v3 (`tailwindcss` ^3.4.17) + PostCSS + Autoprefixer.
+  - Icons: Lucide React (`lucide-react` ^1.56.0).
+  - Markdown Rendering: `react-markdown` ^10.1.0 with `remark-gfm` ^4.0.1 for
+    clinical table display.
+
+Frontend Application Architecture:
+  - Multi-Step Clinical Workflow:
+    * Step 1: Document Ingestion (`Ingestion.tsx`)
+      Drag-and-drop file upload, multi-format indicators, real-time chunk count,
+      and document index deletion.
+    * Step 2: Clinical Intake & Prescriptions (`IntakeForm.tsx` & `StructuredAnswerTable.tsx`)
+      Structured patient input (Disease, Comorbidity, Stage, SpO2, HRCT score),
+      free-text query input, confidence metrics, and 8-column prescription table.
+    * Step 3: Chunk Inspector & Audit Tool (`ChunkInspector.tsx`)
+      Searchable, filterable database explorer allowing users to inspect parsed
+      chunks, chunk types (`table_matrix` vs `prose_narrative`), breadcrumbs,
+      token counts, and source page numbers.
+
+Source Files:
+  - `backend/main.py`
+  - `frontend/src/App.tsx`
+  - `frontend/src/components/Dashboard.tsx`
+  - `frontend/src/components/Ingestion.tsx`
+  - `frontend/src/components/IntakeForm.tsx`
+  - `frontend/src/components/StructuredAnswerTable.tsx`
+  - `frontend/src/components/ChunkInspector.tsx`
+
+--------------------------------------------------------------------------------
+3. COMPLETE TECHNOLOGY STACK SUMMARY TABLE
+--------------------------------------------------------------------------------
+
++---------------------------+--------------------------------+-------------------------------------------------+
+| PIPELINE PROCESS          | TECHNOLOGY / LIBRARY           | SPECIFIC ROLE & PURPOSE                         |
++---------------------------+--------------------------------+-------------------------------------------------+
+| Multi-Format Extraction   | IBM Docling 2.0+               | PDF & Image layout to structured Markdown       |
+|                           | RapidOCR (ONNX Runtime)        | OCR for scanned pages and charts                |
+|                           | python-docx                    | Native Word (.docx/.doc) table extraction       |
+|                           | pandas & openpyxl              | Tabular (.xlsx/.csv) matrix extraction          |
+|                           | pypdf & pdfplumber             | Fast text fallback & page coordinate mapping    |
++---------------------------+--------------------------------+-------------------------------------------------+
+| Structure-Aware Chunking  | Dual-Fork Chunking Engine      | Separates table matrices from prose narrative   |
+|                           | Forward-Fill Normalization     | Resolves merged comorbidity/stage cells         |
+|                           | Breadcrumb Hierarchy Tracker   | Prepends Markdown heading paths to text chunks  |
+|                           | Page Provenance Mapper         | Dynamic page attribution via phrase search      |
++---------------------------+--------------------------------+-------------------------------------------------+
+| Dense Vector Indexing     | ChromaDB 0.5.5+                | Persistent vector database (Cosine distance)    |
+|                           | Google text-embedding-004      | 768-dim dense semantic embeddings               |
+|                           | SHA-256 Vector Fallback        | Deterministic 768-dim offline vector generation |
++---------------------------+--------------------------------+-------------------------------------------------+
+| Sparse Keyword Indexing   | rank_bm25 (BM25Okapi)          | Exact medical terminology and drug matching     |
+|                           | Python Pickle Serialization    | Persistent keyword index (bm25_store.pkl)       |
++---------------------------+--------------------------------+-------------------------------------------------+
+| Retrieval & Fusion        | Reciprocal Rank Fusion (RRF)   | 1 / (60 + rank) rank fusion algorithm           |
+|                           | Canonical Metadata Sync        | Pulls dynamic ChromaDB metadata for citations   |
++---------------------------+--------------------------------+-------------------------------------------------+
+| Clinical Reasoning & LLM  | google-genai (Gemini 2.5)      | Zero-temp grounded clinical generation          |
+|                           | Dynamic Range Evaluator (re)   | Dynamic clinical range evaluation (HRCT, SpO2)  |
+|                           | 8-Column Markdown Standard     | Uniform prescription display format             |
++---------------------------+--------------------------------+-------------------------------------------------+
+| Inspection & Audit        | FastAPI Inspect Endpoint       | GET /api/v1/inspect/chunks                      |
+|                           | ChunkInspector Component       | Real-time chunk, page, & metadata explorer      |
++---------------------------+--------------------------------+-------------------------------------------------+
+| Web Application & UI      | React 19 & TypeScript          | Single Page Clinical Application                |
+|                           | Vite 8                         | Modern frontend build & dev server              |
+|                           | Tailwind CSS v3                | Responsive clinical design system               |
+|                           | Lucide React                   | Clinical and workflow iconography               |
+|                           | react-markdown & remark-gfm    | Markdown clinical prescription table rendering  |
+|                           | FastAPI & Uvicorn              | Python ASGI REST API service                    |
+|                           | Pydantic v2                    | Strict schema validation                        |
++---------------------------+--------------------------------+-------------------------------------------------+
+
+================================================================================
+END OF ARCHITECTURAL SPECIFICATION
+================================================================================

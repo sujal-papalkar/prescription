@@ -1,0 +1,638 @@
+[
+  {
+    "id": "R1",
+    "question": "A 35-year-old adult has respiratory viral infection with fever, cough, HRCT score 5 and SpO2 97%. What basic therapeutic guidance applies to adults above 15 years?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "11–12 (User note) -> Verified: Page 13 (Basic) & Page 17 (Pranvah Srotas Above 15yr Mild)",
+    "verified_target": "Page 13 / 17: Somtajvir 1-0-0, Pranvir 2-2-2, Rasaka Rasayana 1-0-1",
+    "retrieved_pages": [
+      2,
+      6,
+      7,
+      15,
+      19,
+      21,
+      23,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 5.6,
+    "answer": "Based on the provided document excerpts, the patient presents with clinical and imaging parameters that correspond to different severity tiers:\n- **HRCT Score 5** corresponds to the **Mild Tier (0 to 8)**.\n- **SpO2 97%** corresponds to the **Mild Tier (Above 94%)** / Investigation Group B (Symptomatic/URTI without comorbidity).\n\nBelow are the matching protocols for both parameters as outlined in the guidelines. The attending doctor/physician should determine which protocol is appropriate based on the patient's overall clinical presentation and assessment.\n\n---\n\n### Option 1: Protocol Based on HRCT Score 5 (Mild Tier: 0 to 8, SpO2 > 94)\n*(Note: Tables for general Annavah Srotas vyadhi and Manovah Srotas vyadhi categories for Mild [0 to 8] with SpO2 > 94 are available in the document. Below is an example matching the Mild tier parameters from the available excerpt data.)*\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Somtajvir | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 19, 21 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | with warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 19, 21 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | with honey /warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 19, 21 |\n\n---\n\n### Option 2: Prophylactic / General Guidance Protocol for Adults (15+ Years) without Known Comorbidities\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Pranvir | 2-0-2 | Twice a day | Vyanodaan kal (twice a day after food.) | 90 days (after that depending on situation) | Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 7 |\n| Rasaka Rasayana | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | 90 days (after that depending on situation) | Honey/ Warm Water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 7 |\n\n---\n\n### Investigation Protocol (Mild Tier - Group B: Symptomatic / URTI without Comorbidity)\n| CLINICAL PARAMETER / TOPIC | DETAILS FROM UPLOADED PDF | SOURCE DOCUMENT | PAGE |\n| --- | --- | --- | --- |\n| Investigations for Mild Group B (Fever, Cough, URTI symptoms) | CBC, RFT, RBS, LFT, CXR, ECG, SpO2 monitoring by pulse Oximeter. | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 24 |\n\n---\n\n### Additional Instructions During Infection (Sansarga)\n| CLINICAL PARAMETER / TOPIC | DETAILS FROM UPLOADED PDF | SOURCE DOCUMENT | PAGE |\n| --- | --- | --- | --- |\n| Gargles | With salt + haldi 3 times a day if Kapha doshaadhikya, with yashtichurna +haldi if pittaadhikya | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 23 |\n| Steam | With 1 or 2 drops of Eucalyptus oil in water 3 times a day | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 23 |\n| Monitoring | Monitor daily SpO2, PR, symptoms, appetite, bowel, urine and inform to treating physician | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 23 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R2",
+    "question": "A 12-year-old child has fever, cough and weakness, with HRCT score 6 and SpO2 96%. What age-specific therapeutic guidance applies?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "11–12 (User note) -> Verified: Page 13 (Below 15yr) & Page 16 (Pranvah Srotas Below 15yr Mild)",
+    "verified_target": "Page 13 / 16: Pediatric protocol Below 15 Years: Somtajvir, Pranvir, Rasaka Rasayana (appropriate pediatric matra)",
+    "retrieved_pages": [
+      15,
+      19,
+      20,
+      21,
+      22,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.69,
+    "answer": "### Clinical Observation & Tier Analysis\n\nThe patient presents with an HRCT score of 6 and an SpO2 of 96%. Based on the provided guidelines:\n* **HRCT Score (6)** falls into the **Mild Tier** (HRCT Score 0 to 8).\n* **SpO2 (96%)** falls into the **Mild Tier** (SpO2 above 94%).\n\nBoth parameters consistently align with the **Mild Tier** criteria. Below is the corresponding protocol from the document excerpts.\n\n---\n\n### Treatment Protocol Options\n\n#### Option 1: Based on Mild Tier Parameters (HRCT Score 0 to 8 & SpO2 Above 94%)\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n|----------------|--------|-----------|----------------------|----------|-------------------|-----------------|------|\n| Somtajvir | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/ warm water | Respiratory Viral Infection Management Protocol | 21 |\n| Pranvir | 2-2-2 | Three times a day | After food | Not specified | with warm water | Respiratory Viral Infection Management Protocol | 21 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | with honey/ warm water | Respiratory Viral Infection Management Protocol | 21 |\n| Mahalakshmi Vilas | 0-0-1 | Not specified | Nisha kal (at bedtime) | Not specified | with honey/ warm water | Respiratory Viral Infection Management Protocol | 21 |\n| Pravi Rasayana | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/ warm water | Respiratory Viral Infection Management Protocol | 21 |\n\n---\n\n### Attending Doctor Decision Notice\nThe attending physician should determine which protocol is appropriate based on the patient's overall clinical presentation and assessment.",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R3",
+    "question": "A 45-year-old adult has fever, cough, HRCT score 12 and SpO2 92%. Which severity category and therapeutic guidelines apply?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "12–13 (User note) -> Verified: Page 17 (Pranvah Srotas Above 15yr Moderate 9 to 15, SpO2 90 to 94)",
+    "verified_target": "Page 17: Moderate Tier (HRCT 9-15, SpO2 90-94): Somtajvir 1-0-1, Pranvir 2-2-2, Rasaka Rasayana 1-0-1, Sutendra Rasayan 0-0-1, Arpisa Rasayan 1-0-0, Heeraka Rasayana 1-0-0",
+    "retrieved_pages": [
+      14,
+      15,
+      19,
+      20,
+      21,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 4.06,
+    "answer": "### Clinical Observation & Tier Analysis\n\nThe patient presents with fever, cough, an HRCT score of 12, and an SpO2 of 92%. Based on the provided document excerpts, these parameters map to different severity categories:\n* **HRCT Score 12:** Corresponds to the **Moderate Tier (9 to 15)**.\n* **SpO2 92%:** Corresponds to the **Moderate Tier (90% to 94%)** and criteria for **Moderate State** (Pneumonia, SpO2 < 94% [range 90-94%] on room air).\n\nBoth parameters consistently align with the **Moderate** severity category and associated protocols. Below are the therapeutic guidelines and investigations corresponding to this tier.\n\n---\n\n### Applicable Guideline Sections, Categories, and Tables\n* **Investigation Protocol:** Guidelines for the Management of Respiratory Viral Infections > Investigation Protocol - Moderate State (Page 24)\n* **Rasayana Guidelines:** Guidelines for the Management of Respiratory Viral Infections > Rasayana Guidelines for Respiratory Viral Infection as per CT Score / Disease Severity Along with Other Co-Morbidities (Pages 14–21)\n\n---\n\n### Therapeutic Protocols\n\n#### Option 1: Protocol Based on HRCT Score 12 & SpO2 92% (General / Standard Rasayana Guidelines - Example without specified comorbidity)\n*Note: Depending on patient co-morbidities (such as Rasavah, Annavah, Mootravah, Manovah, or Udakvah srotas vyadhi), specific disease-adapted tables apply (pages 14–21).* Below is the baseline moderate tier protocol matching HRCT 9–15 and SpO2 90–94%:\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Somtajvir | 1-0-1 | Twice a day | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 14 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 14 |\n| Rasaka Rasayana | 1-0-1 | Twice a day | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 14 |\n| Meha Rasayan | 1-0-0 | Once a day | Rasayan kal (Early morning on empty stomach) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 14 |\n\n---\n\n#### Option 2: Investigation Protocol for Moderate State\n| CLINICAL PARAMETER / TOPIC | DETAILS FROM UPLOADED PDF | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- |\n| Moderate State Investigations | CBC, RFT, LFT, RBS, ECG, ABG, ESR, CRP, S. FERRITIN, D- DIMER/LDH. <br>• If QTc prolongation in ECG then daily S. Electrolytes ionic Calcium and Magnesium.<br>• HRCT chest.<br>• Follow up CRP, D-dimer and Sr. Ferritin every 48-72 hrs if available.<br>• CBC with DLC, absolute lymphocyte count KFT/LFT daily. | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 24 |\n\n---\n\n*Attending Doctor Notice:* The attending physician should determine the appropriate clinical management, specific co-morbidity adaptations (e.g., matching Srotas vyadhi guidelines), and treatment selection based on the patient's overall clinical presentation and assessment.",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R4",
+    "question": "A 55-year-old adult has severe breathlessness, HRCT score 18 and SpO2 88%. What severe-category guidance is provided?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "13 (User note) -> Verified: Page 17 (Pranvah Srotas Above 15yr Severe >15, SpO2 <90)",
+    "verified_target": "Page 17: Severe Tier (HRCT >15, SpO2 <90): Somtajvir 1-1-1, Pranvir 2-2-2, Rasaka Rasayana 1-0-1, Sutendra Rasayan 0-0-1, Arpisa Rasayan 1-0-0, Heeraka Rasayana 1-0-0, Pranvallabha Rasayan 1-0-0, Mahalakshmi Vilas 1-0-1",
+    "retrieved_pages": [
+      2,
+      3,
+      4,
+      6,
+      14,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.24,
+    "answer": "Based on the provided document excerpts, the patient presents with severe breathlessness, an HRCT score of 18 (which falls into the **SEVERE (>15)** category), and an SpO2 of 88% (which falls into the **SEVERE (<90)** category). Both parameters consistently align with the **Severe Tier** of the guidelines. \n\nThe relevant guideline sections, categories, and tables present in the document include:\n- **Investigation Protocol** under *Guidelines for the Management of Respiratory Viral Infections* (Page 24)\n- **Rasayana Guidelines for Respiratory Viral Infection as per CT Score/Disease Severity along with other Co-morbidities** (Pages 14)\n\nBelow are the matching protocols for the severe category from the document excerpts. The attending physician should determine the appropriate treatment based on the patient's overall clinical presentation.\n\n### Option: Protocol for Severe Category (HRCT Score >15 and SpO2 Below 90)\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Somtajvir | 1-1-1 | Three times daily | Rasayan kal and Vyanodaan kal (Early morning on empty stomach and after lunch and dinner) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 14 |\n| Pranvir | 2-2-2 | Three times daily | Three times a day after food | Not specified | Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 14 |\n| Rasaka Rasayana | 1-0-1 | Twice daily | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 14 |\n| Meha Rasayan | 1-0-0 | Once daily | Rasayan kal (Early morning on empty stomach) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 14 |\n| Pranvallabha Rasayan | 1-0-0 | Once daily | Rasayan kal (Early morning on empty stomach) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 14 |\n\nAdditionally, for severe cases (Severe Pneumonia/ARDS/Septic shock/Sepsis or SpO2 <90% on room air), the investigation protocol recommends:\n| CLINICAL PARAMETER / TOPIC | DETAILS FROM UPLOADED PDF | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- |\n| Investigations for Severe State | CBC, LFT, RFT, RBS, CXR, LDH, ECG, ABG, ESR, CRP, S. FERRITIN, D-DIMER, Triglycerides, troponin I, CPK-MB Blood Culture and sensitivity. * If QTc- Prolongation in ECG, then daily S. Electrolytes ionic calcium and S. Magnesium. | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 24 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R5",
+    "question": "A 50-year-old patient has diabetes and respiratory viral infection, with HRCT score 7 and SpO2 96%. Which diabetes-comorbidity table applies?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 14 (Verified)",
+    "verified_target": "Page 14: Udakvah srotas vyadhi (Diabetes Mellitus) MILD (0 to 8) SpO2 above 94: Somtajvir 1-0-0, Pranvir 2-2-2, Rasaka Rasayana 1-0-1, Sutendra Rasayan 0-0-1",
+    "retrieved_pages": [
+      6,
+      11,
+      14,
+      15,
+      19,
+      21,
+      22,
+      23,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.05,
+    "answer": "Based on the clinical parameters provided for the 50-year-old patient with diabetes and a respiratory viral infection:\n- **HRCT Score 7** corresponds to the **Mild Tier (0 to 8)**.\n- **SpO2 96%** corresponds to **Mild Tier (SpO2 above 94%)** [Excerpt 3]. \n\nBecause both parameters align with the same category, the applicable guideline section is **Udakvah srotas vyadhi (Diabetes Mellitus)** under the Mild Tier of the Rasayana Guidelines for Respiratory Viral Infection [Excerpt 3].\n\nBelow are the matching protocols from the uploaded document excerpts. The attending doctor or physician should determine which specific regimen is appropriate based on the patient's overall clinical presentation and assessment.\n\n### Option 1: Protocol corresponding to Mild Tier (HRCT Score 0 to 8 & SpO2 above 94%) with Diabetes Mellitus\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Somtajvir | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 14 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 14 |\n| Rasaka Rasayana | 1-0-1 | Twice a day | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 14 |\n| Meha Rasayan | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 14 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R6",
+    "question": "A 45-year-old patient has diabetes, HRCT score 12 and SpO2 92%. Which severity-specific recommendations are listed for diabetes comorbidity?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 14 (Verified)",
+    "verified_target": "Page 14: Udakvah srotas vyadhi (Diabetes Mellitus) MODERATE (9 to 15) SpO2 90 to 94: Somtajvir 1-0-1, Pranvir 2-2-2, Rasaka Rasayana 1-0-1, Sutendra Rasayan 0-0-1, Arpisa Rasayan 1-0-0, Heeraka Rasayana 1-0-0",
+    "retrieved_pages": [
+      2,
+      11,
+      14,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.82,
+    "answer": "Based on the provided document excerpts, the patient presents with conflicting parameters: an HRCT score of 12 corresponds to the **Moderate tier (9 to 15)**, while an SpO2 of 92% corresponds to the **Moderate tier (90 to 94%)** [Excerpt 3]. Furthermore, the patient has a history of diabetes (comorbidity). \n\nBecause you are acting as a clinical decision support tool, the attending physician must determine the appropriate protocol based on the patient's overall clinical presentation and assessment. Below are the matching protocols for the applicable tiers found in the guidelines.\n\n### Option 1: Protocol Corresponding to Moderate Tier (HRCT Score 12 / SpO2 92%)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Somtajvir | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 14 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 14 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 14 |\n| Meha Rasayan | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | Honey/Warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 14 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R7",
+    "question": "A 60-year-old patient has hypertension and respiratory viral infection, with HRCT score 6 and SpO2 97%. Which comorbidity section applies?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 15 (Verified)",
+    "verified_target": "Page 15: Rasavah srotas vyadhi (Heart Diseases, HTN etc.) MILD (0 to 8) SpO2 above 94: Somtajvir 1-0-0, Pranvir 2-2-2, Rasaka Rasayana 1-0-1, Sutendra Rasayan 0-0-1, Sindhurbhushan Rasayan 0-0-1",
+    "retrieved_pages": [
+      6,
+      7,
+      10,
+      11,
+      15,
+      19,
+      21,
+      23,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 4.48,
+    "answer": "Based on the provided document excerpts, the patient presents with hypertension, an HRCT score of 6, and an SpO2 of 97%. \n\n### Clinical Observation & Tier Mapping\n* **Comorbidity Classification:** Hypertension falls under **Rasavah srotas vyadhi (Heart Diseases, HTN etc.)** or **Rasabhinodan vruddhi (Hypertension)** [Excerpt 1, Excerpt 3, Excerpt 4]. Additionally, being 60 years of age with hypertension places the patient under **Group-C (Symptomatic/URTI with Comorbidity - >60 years, HTN/IHD)** for investigation protocols [Excerpt 2].\n* **HRCT Score & SpO2 Parameter Tiers:**\n  * **Option 1 (HRCT Score 6):** Falls within the **Mild (0 to 8)** tier [Excerpt 3].\n  * **Option 2 (SpO2 97%):** Falls within the **Mild (Above 94%)** tier [Excerpt 3].\n\nAs both parameters correspond to the Mild severity tier, the matching treatment protocols are outlined below. The attending doctor should determine the appropriate clinical approach based on the comprehensive patient assessment.\n\n---\n\n### Treatment Protocols\n\n#### Option 1: Based on HRCT Score (Mild Tier: 0 to 8)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Somtajvir | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | with warm water | Respiratory_Viral_Infection_Management_prorocal_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n| Sutendra Rasayan | 0-0-1 | Not specified | Nisha kal (at bedtime) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n| Sindhurbhushan Rasayan | 0-0-1 | Not specified | Nisha kal (at bedtime) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n\n---\n\n#### Option 2: Based on SpO2 (Mild Tier: Above 94%)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Somtajvir | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | with warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n| Sutendra Rasayan | 0-0-1 | Not specified | Nisha kal (at bedtime) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n| Sindhurbhushan Rasayan | 0-0-1 | Not specified | Nisha kal (at bedtime) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 15 |\n\n---\n\n#### Applicable Hypertension Comorbidity Specific Guidance (Nitya Rasayan)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sutendra Rasayana (for Mild Hypertension / Rasabhinodan vruddhi) | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | Honey/warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 10 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R8",
+    "question": "A 58-year-old patient has chronic kidney disease and respiratory viral infection, with HRCT score 11 and SpO2 93%. Which renal-comorbidity section applies?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 20 (Verified exact page)",
+    "verified_target": "Page 20: Mootravah Srotas vyadhi (Chronic /Acute renal failure etc.) MODERATE (9 to 15) SpO2 90 to 94",
+    "retrieved_pages": [
+      3,
+      4,
+      7,
+      11,
+      15,
+      20,
+      22,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 11.12,
+    "answer": "Based on the provided document excerpts, the patient presents with chronic kidney disease (CKD/Mootravah Srotas Vyadhi) alongside a respiratory viral infection, an HRCT score of 11, and an SpO2 of 93%. \n\n### 1. Objective Clinical Observation of Parameters & Applicable Guideline Sections\n* **HRCT Score of 11:** Falls into the **MODERATE (9 to 15)** tier (Page 20).\n* **SpO2 of 93%:** Falls into the **MODERATE (90 to 94%)** tier, characterized by pneumonia, dyspnea, and/or hypoxia (Pages 20, 24).\n* **Chronic Kidney Disease (CKD):** Falls under **Mootravah Srotas Vyadhi (Chronic/Acute renal failure etc.)** with comorbidity guidelines (Pages 11, 20, 24).\n* **Applicable Guideline Sections & Tables:** \n  - *Guidelines for the Management of Respiratory Viral Infections > RASAYANA GUIDELINES FOR RESPIRATORY VIRAL INFECTION AS PER CT SCORE/ DISEASE SEVERITY ALONG WITH OTHER CO MORBIDITIES* (specifically the subsection for **Mootravah Srotas vyadhi (Chronic /Acute renal failure etc.)**, Page 20).\n  - *Guidelines for the Management of Respiratory Viral Infections > INVESTIGATION PROTOCOL* (specifically **2) MODERATE** and **1) MILD > GROUP-C** for CKD comorbidity, Page 24).\n  - *Table Section Matrix. Criteria and Intervention Details -> Co-morbidity: Mootravah srotas Vyadhi* (Page 11).\n\n---\n\n### 2. Matching Protocols for Both Options\n\nSince the patient's parameters align with the Moderate severity criteria, the specific management protocols from the document are outlined below. The attending physician should determine the appropriate course based on the patient's comprehensive clinical evaluation.\n\n#### Option: Moderate Severity Tier Protocol with Mootravah Srotas Vyadhi Comorbidity\n* **Criteria Mapping:** Based on HRCT Score 11 and SpO2 93% (Moderate Tier: HRCT 9 to 15, SpO2 90–94%) combined with Renal Comorbidity (Mootravah Srotas Vyadhi).\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Somtajvir | 1-0-1 | Twice a day | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | with honey / warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | with warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Rasaka Rasayana | 1-0-1 | Twice a day | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | with honey / warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Heeraka Rasayana | 1-0-0 | Once a day | Rasayan kal (Early morning on empty stomach) | Not specified | with honey / warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Somkalpa | 1-0-0 | Once a day | Rasayan kal (Early morning on empty stomach) | Not specified | with honey / warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Mahalakshmi Vilas | 0-0-1 | Once a day | Nisha kal (at bedtime) | Not specified | with honey / warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n\n---\n\n### Attending Doctor Note\nThe attending physician/doctor must determine which protocol or combination of medicines from the provided options is clinically appropriate based on the patient's overall presentation, exact staging, and clinical assessment.",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R9",
+    "question": "A 52-year-old patient has liver disease and respiratory viral infection, with HRCT score 5 and SpO2 96%. Which comorbidity section applies?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 18 (Correction from user note 16; Page 18 is Raktavah Srotas Liver/Spleen)",
+    "verified_target": "Page 18: Raktavah Srotas (Liver/ Spleen or Blood Disorders) MILD (0 to 8) SpO2 above 94",
+    "retrieved_pages": [
+      3,
+      4,
+      11,
+      14,
+      15,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.04,
+    "answer": "Based on the uploaded document excerpts, the patient presents with liver disease and a respiratory viral infection. The applicable comorbidity section is **Raktavah Srotas (Liver/ Spleen or Blood Disorders)**.\n\nFurthermore, the patient's clinical parameters cross different guideline tiers:\n* **HRCT Score of 5** corresponds to the **Mild Tier (0 to 8)**.\n* **SpO2 of 96%** corresponds to the **Mild Tier (SpO2 above 94)**.\n\nBecause both parameters align with the Mild tier, the matching protocol option is presented below. The attending physician should determine the appropriate management based on the patient's overall clinical presentation and assessment.\n\n### Option 1: Protocol Corresponding to Mild Tier (HRCT Score 5 and SpO2 96%)\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Somtajvir | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 18 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | with warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 18 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | with honey /warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 18 |\n| Sutendra Rasayana | 1-0-0 | Not specified | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 18 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R10",
+    "question": "A 42-year-old patient has chronic respiratory disease, fever, cough and wheezing, with HRCT score 8 and SpO2 96%. Which respiratory-specific guidance should be consulted?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 13 / Page 17 (Verified: Pranvah Srotas vyadhi Above 15 Years)",
+    "verified_target": "Page 17: Pranvah Srotas vyadhi (Above 15 Years) MILD (0 to 8) SpO2 above 94",
+    "retrieved_pages": [
+      3,
+      4,
+      6,
+      7,
+      15,
+      20,
+      23,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.5,
+    "answer": "Based on the patient's clinical presentation (HRCT score 8 and SpO2 96%), the parameters cross multiple tiers within the provided document guidelines:\n\n* **HRCT Score 8:** Corresponds to the **Mild Tier** (HRCT Score: 0 to 8).\n* **SpO2 96%:** Corresponds to the **Mild Tier** (SpO2: Above 94%).\n\nBelow are the matching protocols for both parameters as outlined in the uploaded document. The attending physician should determine which protocol is appropriate based on the patient's overall clinical presentation and assessment.\n\n---\n\n### Option 1: Protocol Based on HRCT Score 8 (Mild Tier [0 to 8])\n*Note: This table reflects the general Rasayana guidelines for respiratory viral infections as per CT score/disease severity (such as under Mootravah Srotas vyadhi guidelines provided in the document excerpts).*\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Somtajvir | 1-0-0 | Once daily | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | with warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Rasaka Rasayana | 1-0-1 | Twice daily | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Heeraka Rasayana | 1-0-0 | Once daily | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n\n---\n\n### Option 2: Protocol Based on SpO2 96% (Mild Tier [Above 94%])\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Somtajvir | 1-0-0 | Once daily | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Pranvir | 2-2-2 | Three times a day | Three times a day after food | Not specified | with warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Rasaka Rasayana | 1-0-1 | Twice daily | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |\n| Heeraka Rasayana | 1-0-0 | Once daily | Rasayan kal (Early morning on empty stomach) | Not specified | with honey/warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 20 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R11",
+    "question": "A 35-year-old patient has persistent fever lasting more than five days and weakness during respiratory viral infection. Which symptom-specific guidance addresses this presentation?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 22 (Verified exact page)",
+    "verified_target": "Page 22: Santat Jwar (Persistent fever or more than 5 days) and weakness -> Mahalakshmi Vilas 1-0-1",
+    "retrieved_pages": [
+      2,
+      3,
+      4,
+      6,
+      22,
+      23
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.28,
+    "answer": "Based on the uploaded document excerpts, the following guideline section addresses the presentation of persistent fever lasting more than five days and weakness during a respiratory viral infection:\n\n- **Guideline Section:** *Guidelines for the Management of Respiratory Viral Infections > GUIDELINES FOR MANAGEMENT OF SPECIFIC SYMPTOMS DURING (RESPIRATORY VIRAL INFECTION)* (found on page 22).\n\n### Protocol Option\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Mahalakshmi Vilas | 1-1-1 | Not specified | Rasayan kal and Vyanodaan kal (Early morning on empty stomach and after lunch and dinner) | Not specified | Honey + Ginger juice | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 22 |\n\n*Note:* The attending doctor/physician should determine whether this protocol is appropriate based on the patient's overall clinical presentation and assessment.",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R12",
+    "question": "A 48-year-old patient with respiratory viral infection has constipation and acidity. Which symptom-specific guidance addresses these complaints?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 22 (Verified exact page)",
+    "verified_target": "Page 22: Malavrodh (Constipation) -> Aarewat Kalpa, Amlapitta (Acid Peptic Disorder) -> Ayukshar",
+    "retrieved_pages": [
+      2,
+      3,
+      4,
+      6,
+      9,
+      10,
+      15,
+      22,
+      23
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.72,
+    "answer": "Based on the provided document excerpts, symptom-specific guidance for managing **Malavrodh (Constipation)** and **Amlapitta (Acid Peptic Disorder)** during respiratory viral infection is detailed under the guidelines for specific symptoms. \n\nBecause the patient presents with both symptoms simultaneously, the corresponding protocols for both conditions are presented below. The attending doctor or physician should determine the appropriate treatment regimen based on the patient's overall clinical presentation and assessment.\n\n### Option 1: Protocol for Malavrodh (Constipation)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Aarewat Kalpa sos | 0-0-1 or 2 | Not specified | Nisha kal (at bedtime) | Not specified | with warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 22 |\n\n---\n\n### Option 2: Protocol for Amlapitta (Acid Peptic Disorder)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Ayukshar | 1tsp in 1litrs | Not specified | Drink it when patient feel thirsty. | Not specified | Normal drinking water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 22 |\n\n---\n\n### Applicable Guideline Sections in the Document:\n* **Guidelines for the Management of Respiratory Viral Infections > GUIDELINES FOR MANAGEMENT OF SPECIFIC SYMPTOMS DURING (RESPIRATORY VIRAL INFECTION)** (Page 22)",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R13",
+    "question": "A 40-year-old patient with respiratory viral infection has an abnormal rise in blood pressure and tachycardia. Which symptom-specific guidance covers these findings?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 22 (Verified exact page)",
+    "verified_target": "Page 22: Rasabhinodan vruddhi (Abnormal rise in blood pressure) -> Sutendra Rasayana 1-1-1, Tachycardia (Jalad Hrudgati) -> Pranvallabh 1 cap SOS",
+    "retrieved_pages": [
+      2,
+      3,
+      4,
+      7,
+      10,
+      22,
+      23,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.43,
+    "answer": "Based on the provided document excerpts, the symptom-specific guidance covering an abnormal rise in blood pressure (*Rasabhinodan vruddhi*) and tachycardia (*Jalad Hrudgati*) during a respiratory viral infection is found in the section **GUIDELINES FOR MANAGEMENT OF SPECIFIC SYMPTOMS DURING (RESPIRATORY VIRAL INFECTION)**. \n\nSince the patient presents with two distinct findings corresponding to separate symptom management rows, the protocols for both findings are presented below. The attending doctor or physician should determine which protocol (or combination) is appropriate based on the patient's overall clinical presentation and assessment.\n\n### Option 1: Protocol for Abnormal Rise in Blood Pressure (*Rasabhinodan vruddhi*)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sutendra Rasayana | 1-1-1 | Not specified | Muhurmuhur | Not specified | Honey | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 22 |\n\n### Option 2: Protocol for Tachycardia (*Jalad Hrudgati*)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Pranvallabh | 1 cap | Not specified | SOS | Not specified | Honey + Ginger juice | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 22 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R14",
+    "question": "A 30-year-old patient develops a skin rash during respiratory viral infection. Which symptom-specific section should be consulted?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 22 (Verified exact page)",
+    "verified_target": "Page 22: Shitapitta (Skin rash) -> Kanchan Rasayana 1-0-1",
+    "retrieved_pages": [
+      3,
+      4,
+      6,
+      9,
+      10,
+      15,
+      22,
+      23,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.41,
+    "answer": "Based on the provided document excerpts, the section that should be consulted for a skin rash (Shitapitta) occurring during a respiratory viral infection is **Guidelines for the Management of Respiratory Viral Infections > GUIDELINES FOR MANAGEMENT OF SPECIFIC SYMPTOMS DURING (RESPIRATORY VIRAL INFECTION)**.\n\nBelow is the specific symptom protocol for skin rash based on the document:\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Kanchan Rasayana | 2-2-2 | Three times a day | After food | Not specified | with honey/ warm water | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf | 22 |\n\n*Note: The attending doctor or physician should determine the appropriate protocol and management based on a comprehensive clinical assessment of the patient.*",
+    "verdict": "PASS"
+  },
+  {
+    "id": "R15",
+    "question": "A 44-year-old patient has fever, cough and reduced SpO2. Which investigation protocol describes the criteria for mild, moderate and severe cases?",
+    "target_document": "Respiratory Viral Infection Management protocol.pdf",
+    "expected_page": "Page 24 (Verified exact page)",
+    "verified_target": "Page 24: Investigation Protocol for MILD (Group A/B), MODERATE (Group C), SEVERE (Group D)",
+    "retrieved_pages": [
+      2,
+      6,
+      14,
+      16,
+      17,
+      18,
+      19,
+      21,
+      24
+    ],
+    "retrieved_docs": [
+      "Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25_Respiratory Viral Infection Management prorocol_FINAL version-converted-1-25.pdf"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.44,
+    "answer": "Based on the provided document excerpts, the investigation protocol for mild, moderate, and severe cases is outlined under the **INVESTIGATION PROTOCOL** section. \n\nThe criteria and investigations corresponding to each category are detailed in the table below:\n\n| CLINICAL PARAMETER / TOPIC | DETAILS FROM UPLOADED PDF | SOURCE DOCUMENT | PAGE |\n|----------------------------|---------------------------|-----------------|------|\n| Mild Cases (Group A) | **Criteria:** Asymptomatic But COVID Positive<br>**Investigations:** CBC, RFT, RBS, LFT, ECG | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 24 |\n| Mild Cases (Group B) | **Criteria:** Symptomatic/ URTI without Comorbidity - Fever, Cough, Sore throat, Malaise, Headache, Anosmia, Loss of taste, Diarrhea<br>**Investigations:** CBC, RFT, RBS, LFT, CXR, ECG, SpO2 monitoring by pulse Oximeter | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 24 |\n| Mild Cases (Group C) | **Criteria:** Symptomatic/URTI with Comorbidity - Obesity, >60 years, DM, HTN/IHD, COPD/Chronic lung disease, Immunocompromised state, Immunosuppressive drugs, CKD<br>**Investigations:** CBC, LFT, RFT, RBS, ESR, CRP, LDH, S. FERRITIN, D-DIMER, CXR, ABG, ECG, *If QTc prolongation in ECG then daily S. Electrolyte ionic Calcium and magnesium | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 24 |\n| Moderate Cases | **Criteria:** Pneumonia, Adolescent or adult with presence of clinical features of Dyspnea and or Hypoxia, Fever, Cough, SpO2 <94% (range 90-94%) on room air, Respiratory rate more or equal to 24 per min.<br>**Investigations:** CBC, RFT, LFT, RBS, ECG, ABG, ESR, CRP, S. FERRITIN, D-DIMER/LDH, *If QTc prolongation in ECG then daily S. Electrolytes ionic Calcium and Magnesium, *HRCT chest, *Follow up CRP, D-dimer and Sr. Ferritin every 48-72 hrs if available, *CBC with DLC, absolute lymphocyte count KFT/LFT daily | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 24 |\n| Severe Cases | **Criteria:** Severe Pneumonia/ARDS/Septic shock/Sepsis. Adolescent or adult: with clinical signs of Pneumonia plus one of the following: Respiratory rate >30 breaths/min, Severe respiratory distress, SpO2 <90% on room air.<br>**Investigations:** CBC, LFT, RFT, RBS, CXR, LDH, ECG, ABG, ESR, CRP, S. FERRITIN, D-DIMER, Triglycerides, troponin I, CPK-MB Blood Culture and sensitivity, *If QTc-Prolongation in ECG, then daily S. Electrolytes ionic calcium and S. Magnesium | Respiratory_Viral_Infection_Management_prorocol_FINAL_version_converted_1_25 | 24 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D1",
+    "question": "A 45-year-old patient with diabetes presents with Trushna (polydipsia) and Aruchi (impaired taste). Which symptom-management tables apply?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 8 (Table 2: Symptoms Management)",
+    "verified_target": "Table 2: Trushna (excessive thirst), Aruchi (loss of taste) symptom management",
+    "retrieved_pages": [
+      1,
+      3,
+      9
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.58,
+    "answer": "Based on the patient's presentation with both **Trushna (polydipsia)** and **Aruchi (impaired taste)**, the clinical observation crosses multiple symptom parameters and guideline sections within the document excerpts:\n- **Trushna (Polydipsia)** corresponds to protocols under *PRAMEH (DIABETES MELLITUS) MANAGEMENT* (and can also be associated with *Pramehaj Moorcha* if ketones are present, though specific management protocols for Trushna and Aruchi are separately detailed).\n- **Aruchi (Impaired Taste)** corresponds to multiple entries under *PRAMEH (DIABETES MELLITUS) MANAGEMENT*.\n\nThe attending doctor/physician should determine which specific protocol or combination of protocols is appropriate based on the patient's overall clinical presentation and assessment. Below are the matching protocols for both symptoms from the document excerpts.\n\n### Option 1: Protocols for Trushna (Polydipsia)\n\nThe document excerpts provide two distinct management lines for Trushna under *PRAMEH (DIABETES MELLITUS) MANAGEMENT*:\n\n#### Protocol A (Zincare & Warm Water)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n\n#### Protocol B (*Kansya Rasayan)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| *Kansya Rasayan | 0-0-1 | Not specified | Nisha kal (At bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n\n---\n\n### Option 2: Protocols for Aruchi (Impaired Taste)\n\nThe document excerpts provide multiple management options for Aruchi under *PRAMEH (DIABETES MELLITUS) MANAGEMENT*:\n\n#### Protocol A (Zinzi chips)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zinzi chips | For chewing | 3-4 times a day | Not specified | Not specified | Not specified | DM_RR_DM RR.docx | 3 |\n\n#### Protocol B (*Ruchir & Cow Ghee)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| *Ruchir | 0-1-1 | Not specified | Pran kal | Not specified | Cow ghee | DM_RR_DM RR.docx | 3 |\n\n#### Protocol C (Zincare)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n\n#### Protocol D (Sannidha Rasayan)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D2",
+    "question": "A 50-year-old patient with diabetes has excessive hunger, thirst and weakness. Which symptom-specific guidance should be consulted?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 6 & 8–9 (Table 1 & Table 2)",
+    "verified_target": "Table 2: Shosh, Agnimandya, arochak, daurbalya, Trushna (excessive thirst/hunger/weakness)",
+    "retrieved_pages": [
+      1,
+      3,
+      9
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.95,
+    "answer": "Based on the provided document excerpts, the patient presents with symptoms corresponding to multiple clinical parameters (excessive thirst/Trushna, excessive hunger/Laulya, and weakness/Daurbalya-Alasya / Shosh, Agnimandya, arochak, daurbalya). \n\nAs the patient's presentation crosses multiple parameter tiers/categories in the document, the attending doctor/physician should determine which protocol is appropriate based on the patient's overall clinical presentation and assessment. The matching protocols for each parameter are detailed below:\n\n### Option 1: Protocol for Trushna (Polydipsia / Excessive Thirst)\n- **Guideline Section:** Table Matrix 1 (Symptoms: Trushna) and Table Section Matrix (Prameh Management) [Source: DM_RR_DM RR.docx, Pages 1, 3]\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 1-0-1 | Twice a day | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |\n| Zincare | 2-0-2 | Twice a day | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n| *Kansya Rasayan | 0-0-1 | At bedtime | Nisha kal (At bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n\n---\n\n### Option 2: Protocol for Laulya (Polyphagia / Excessive Hunger)\n- **Guideline Section:** Table Matrix 1 (Symptoms: Laulya) [Source: DM_RR_DM RR.docx, Page 1]\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Asinorm | 2-0-2 | Twice a day | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |\n\n---\n\n### Option 3: Protocol for Daurbalya-Alasya / Shosh (Weakness / Fatigue / Loss of Appetite / Unexplained Weight Loss)\n- **Guideline Section:** Table Matrix 1 (Symptoms: Daurbalya-Alasya) and Table Section Matrix (Prameh Management) [Source: DM_RR_DM RR.docx, Pages 1, 3]\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 1-0-1 | Twice a day | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |\n| *Deepan churna (If Vaat dushti)* | 0-1-1 | Twice a day | Praan kal | Not specified | Cow ghee | DM_RR_DM RR.docx | 1 |\n| *Ruchir (If Pitta and Kapha dushti)* | 0-1-1 | Twice a day | Praan kal | Not specified | Cow ghee | DM_RR_DM RR.docx | 1 |\n| Zincare | 2-0-2 | Twice a day | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n| Rasaka Rasayana | 1-0-1 | Twice a day | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n| Meha Rasayan | 1-0-0 | Once a day | Rasayan Kal (Early morning on empty stomach) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n\n*Note: The attending physician should decide which specific protocol or combination is appropriate based on the patient's comprehensive clinical evaluation.*",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D3",
+    "question": "A 38-year-old patient with diabetes experiences fatigue, lethargy and excessive thirst. Which symptom-management sections are relevant?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 6 & 8–9 (Table 1 & Table 2)",
+    "verified_target": "Table 2: Daurbalya (weakness/fatigue), Alasya (lethargy), Trushna",
+    "retrieved_pages": [
+      1,
+      3,
+      9
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 4.25,
+    "answer": "Based on the provided document excerpts, the patient presents with diabetes along with symptoms of fatigue (Daurbalya-Alasya) and excessive thirst (Trushna/polydipsia). These clinical presentations map to multiple guideline sections and symptom-management protocols within the document. \n\nSpecifically, the patient's presentation corresponds to:\n1. **Prameh (Diabetes Mellitus) Management** and **Primary Prevention Helpful Guidelines** for fatigue (*Daurbalya-Alasya*).\n2. **Primary Prevention Helpful Guidelines** for excessive thirst (*Trushna*).\n3. **Pramehaj Moorcha (Ketones in urine routine) Basic Guideline**, which addresses symptoms including *Trushna* (excessive thirst).\n\nBecause the patient's symptoms span multiple management sections and parameters, the corresponding protocol options are presented below. The attending doctor or physician should determine which protocol is appropriate based on the patient's overall clinical presentation and assessment.\n\n---\n\n### Option 1: Protocols for Fatigue (Daurbalya-Alasya)\nDepending on the underlying dosha or specific management sub-section, the following regimens are indicated for fatigue:\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 1-0-1 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |\n| *Deepan churna (If Vaat dushti) | 0-1-1 | Not specified | Praan kal | Not specified | Cow ghee | DM_RR_DM RR.docx | 1, 3 |\n| *Ruchir (If Pitta and Kapha dushti) | 0-1-1 | Not specified | Praan kal | Not specified | Cow ghee | DM_RR_DM RR.docx | 1, 3 |\n| Meha Rasayan | 1-0-0 | Not specified | Early morning on empty stomach | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n| Zincare | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n\n---\n\n### Option 2: Protocols for Excessive Thirst (Trushna / Polydipsia)\nDepending on whether it is addressed under general symptom management or under Pramehaj Moorcha guidelines, the following options apply:\n\n#### Sub-Option A: Trushna Symptom Management Guideline\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 1-0-1 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |\n\n#### Sub-Option B: Pramehaj Moorcha Guideline (Addressing Trushna along with associated systemic symptoms)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Heerak Rasayan | 1-0-0 | Not specified | Rasayan Kal (Early morning on empty stomach) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 9 |\n| Meha Rasayan | 0-0-1 | Not specified | Nisha kal (At bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 9 |\n| Zincare | 2-0-2 or 2-2-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 9 |\n| Urokine | 2-2-2 | Not specified | Three times a day after food | Not specified | Warm water | DM_RR_DM RR.docx | 9 |\n| Ayukshar | 5gm per 1litre water | Not specified | Use it in drinking water | Not specified | 5gm per 1litre water | DM_RR_DM RR.docx | 9 |\n| Lavan | Replace table salt with it. Use it as per the need while cooking | As per need | Replace table salt with it. Use it as per the need while cooking | Not specified | Replace table salt with it. Use it as per the need while cooking | DM_RR_DM RR.docx | 9 |\n| Aarevat Kalpa | 0-0-2 | Not specified | Nisha kal (At bedtime) | Not specified | Warm water | DM_RR_DM RR.docx | 9 |\n| Asinorm | 2-2-2 | Not specified | Three times a day after food | Not specified | Warm water | DM_RR_DM RR.docx | 9 |\n\n*(Note: The attending physician should review all relevant sections above and determine the appropriate therapeutic protocol based on the patient's complete clinical evaluation.)*",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D4",
+    "question": "A 32-year-old person has a family history of diabetes but no confirmed diagnosis. Which primary-prevention guidance applies?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 6 (Table 1: Primary Prevention)",
+    "verified_target": "Table 1: Primary Prevention for Family History of DM / Impaired fasting glycaemia",
+    "retrieved_pages": [
+      1,
+      3
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.15,
+    "answer": "Based on the provided document excerpts, the applicable guideline section is **PRIMARY PREVENTION HELPFUL GUIDELINES (HELP TO PREVENT ONSET OF DIABETES IN IMPAIRED GLUCOSE TOLERANCE AND IMPAIRED FASTING GLYCAEMIA/PRE-DIABETES, FAMILY HISTORY OF DM/RISKY PATIENTS)**. \n\nFor a patient with a family history of diabetes, the specific primary prevention protocol matching this risk factor is detailed below:\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |\n\n*Note: The attending doctor/physician should determine whether this protocol is appropriate based on the patient's overall clinical presentation and assessment.*",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D5",
+    "question": "A 40-year-old person has a BMI of 28 and is at risk of diabetes. Which prevention recommendations address overweight patients?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 6 (Table 1: Primary Prevention Overweight BMI >= 25)",
+    "verified_target": "Table 1: Over wt. (At-Risk BMI >= 25) -> Obecon 2-2-2 with warm water",
+    "retrieved_pages": [
+      1,
+      10
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.21,
+    "answer": "Based on the provided document excerpts, the patient's clinical presentation (BMI of 28, falling under the at-risk category of BMI ≥ 25) matches the **PRIMARY PREVENTION HELPFUL GUIDELINES** section for overweight patients. \n\n### Applicable Guideline Section\n- **Section:** PRIMARY PREVENTION HELPFUL GUIDELINES (HELP TO PREVENT ONSET OF DIABETES IN IMPAIRED GLUCOSE TOLERANCE AND IMPAIRED FASTING GLYCAEMIA/PRE-DIABETES, FAMILY HISTORY OF DM/RISKY PATIENTS)\n- **Clinical Parameter:** Over wt. (At-Risk BMI ≥ 25)\n\n---\n\n### Treatment Protocol\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Obecon | 2-2-2 | Not specified | Vyanodaan kal (three times a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |\n\n*Note: The attending doctor/physician should determine whether this protocol is appropriate based on the patient's overall clinical presentation and assessment.*",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D6",
+    "question": "A 29-year-old pregnant patient has gestational diabetes. Which guidance addresses this risk group?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 6 & 12 (Table 1 & Secondary Prevention)",
+    "verified_target": "Table 1: Gestational Diabetes / High-Risk pregnancy",
+    "retrieved_pages": [
+      1,
+      3
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.61,
+    "answer": "Based on the provided document excerpts, the guidance addressing gestational diabetes (Gestational DM) includes specific management recommendations under Prameh (Diabetes Mellitus) Management. \n\n### Applicable Guideline Sections & Tables\n* **Section / Category:** Prameh (Diabetes Mellitus) Management -> Gestational DM\n* **Source Document:** DM_RR_DM RR.docx (Page: 3)\n\n---\n\n### Management Protocols for Gestational DM\n\nThe document outlines that for Gestational DM, *Lakshanik chikitsa* should be provided, with medicines administered as per the severity of symptoms (1 or 1+2). The specific formulations, doses, timings, and anupana mentioned across the excerpts for Gestational DM management are detailed in the tables below:\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n| Heerak rasayan | 1-0-0 | Not specified | Rasayan Kal (Early morning on empty stomach) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/warm water | DM_RR_DM RR.docx | 3 |\n| Meha Rasayan | 0-0-1 | Not specified | Nisha kal (At bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n\n*Note: The attending doctor/physician should determine which specific protocol or combination of medicines is appropriate based on the patient's overall clinical presentation, symptom severity, and assessment.*",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D7",
+    "question": "A 35-year-old person has a family history of diabetes, obesity and excessive thirst. Which prevention and symptom sections should be consulted?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 6 & 8 (Table 1: Primary Prevention & Table 2: Symptoms)",
+    "verified_target": "Table 1 (Family history & Obesity/BMI) + Table 2 (Trushna/Thirst)",
+    "retrieved_pages": [
+      1,
+      3
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.99,
+    "answer": "Based on the provided document excerpts, the clinical presentation matches multiple categories within the **PRIMARY PREVENTION HELPFUL GUIDELINES (HELP TO PREVENT ONSET OF DIABETES IN IMPAIRED GLUCOSE TOLERANCE AND IMPAIRED FASTING GLYCAEMIA/PRE-DIABETES, FAMILY HISTORY OF DM/RISKY PATIENTS)** section:\n- **Family history of diabetes** corresponds to the Family History Of DM tier.\n- **Obesity / Overweight (At-Risk BMI ≥ 25)** corresponds to the Over wt. (At-Risk BMI ≥ 25) tier.\n- **Excessive thirst (Polydipsia)** corresponds to the Trushna (Polydipsia) tier.\n\nThe attending doctor/physician should determine which protocol or combination of protocols is appropriate based on the patient's overall clinical presentation and assessment. Below are the matching protocols corresponding to each parameter presented in Markdown table format:\n\n### Option 1: Protocol for Family History of DM\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |\n\n### Option 2: Protocol for Overweight / Obesity (BMI ≥ 25)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Obecon | 2-2-2 | Not specified | Vyanodaan kal (three times a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |\n\n### Option 3: Protocol for Excessive Thirst (Trushna / Polydipsia)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 1-0-1 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 1 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D8",
+    "question": "A 48-year-old patient with diabetes has unexplained weight loss, weakness and loss of appetite. Which symptom-management guidance applies?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 8–9 (Table 2: Shosh, Agnimandya, Arochak, Daurbalya)",
+    "verified_target": "Table 2: Shosh Agnimandya, arochak, daurbalya -> Rasaka Rasayana 0-0-1, Ruchir 0-1-1",
+    "retrieved_pages": [
+      2,
+      3
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.17,
+    "answer": "Based on the clinical presentation provided (unexplained weight loss, weakness, and loss of appetite corresponding to symptoms like *Shosh, Agnimandya, arochak, daurbalya*), the document outlines multiple medication protocols. Because multiple options and variations exist for managing these symptoms, the attending doctor/physician should determine which protocol is appropriate based on the patient's overall clinical presentation and assessment.\n\nBelow are the protocols matching the clinical parameters from the document excerpts:\n\n### Option 1: Protocol using *Ruchir*\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| *Ruchir | 0-1-1 | Not specified | Pran kal | Not specified | Cow ghee | DM_RR_DM RR.docx | Page: 2, 3 |\n\n### Option 2: Protocol using Rasaka Rasayana (Variant A)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Rasaka Rasayana | 0-0-1 | Not specified | Nisha kal (At bedtime) | Not specified | Honey / warm water | DM_RR_DM RR.docx | Page: 2 |\n\n### Option 3: Protocol using Rasaka Rasayana (Variant B)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | Page: 3 |\n\n### Option 4: Protocol using Meha Rasayan\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Meha Rasayan | 1-0-0 | Not specified | Rasayan Kal (Early morning on empty stomach) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | Page: 3 |\n\n### Option 5: Protocol including Zincare (For chronic samprapti)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | 2-0-2 | Twice a day after food | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | Page: 2, 3 |\n\n*Note: The attending doctor should review the patient's specific presentation to select the appropriate option.*",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D9",
+    "question": "A 50-year-old patient with diabetes experiences tingling or numbness in the limbs. Which symptom-specific guidance addresses this?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 9–10 (Table 11: Diabetic Neuropathy / Jeerna Pramehaj Vaatdushti)",
+    "verified_target": "Table 11: Jeerna Pramehaj Vaatdushti (Diabetic Neuropathy) - Tingling/numbness -> Heerak Rasayan 1-0-0",
+    "retrieved_pages": [
+      1,
+      2,
+      3,
+      11
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.88,
+    "answer": "Based on the provided document excerpts, several protocols are outlined for symptoms of tingling or numbness in the limbs (*Kampa, Supti / Jeerna Pramehaj Vaatdushti*). \n\nSince multiple intervention options are present across the guidelines for this symptom presentation, the corresponding protocols are presented below. The attending doctor should determine which protocol is appropriate based on the patient's overall clinical presentation and assessment.\n\n### Option 1: Prameh (Diabetes Mellitus) Management – Tapyadi Loh\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Tapyadi Loh | 125mg (2-0-2) | Twice a day | Vyanodaan kal (twice a day after food) | Not specified | With honey/ warm water | DM_RR_DM RR.docx | 3 |\n\n### Option 2: Prameh (Diabetes Mellitus) Management – Mahayograj Guggul\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Mahayograj guggul | 125mg (2-0-2) | Twice a day | Vyanodaan kal (twice a day after food) | Not specified | With honey/ warm water | DM_RR_DM RR.docx | 3 |\n\n### Option 3: Prameh (Diabetes Mellitus) Management – Zincare\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | Not specified (2-0-2) | Twice a day | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n\n### Option 4: Prameh (Diabetes Mellitus) Management – Meha Rasayan\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Meha Rasayan | Not specified (0-0-1) | At bedtime | Nisha Kal (At bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n\n### Option 5: Prameh (Diabetes Mellitus) Management – Pawan Chintamani\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Pawan Chintamani | Not specified (0-0-1) | At bedtime | Nisha Kal (At bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n\n### Option 6: Symptoms Management – Rasaka Rasayana\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey / warm water | DM_RR_DM RR.docx | 2 |\n\n### Option 7: Jeerna Pramehaj Vaatdushti (Diabetic Neuropathy) Management – Siraatone\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Siraatone | Not specified (2-0-2 or 2-2-2) | Twice or three times a day | Vyanodaan kal (twice or three times a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 11 |\n\n### Option 8: Symptoms Management – Kanchanar Guggul + Tapyadi Loh + Ashwagandha\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Kanchanar guggul + Tapyadi loh + ashwagandha | 1-0-1 (125 mg each) | Twice a day | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 2 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D10",
+    "question": "A 55-year-old patient with diabetes reports blurred vision. Which symptom or complication section should be consulted?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 10 (Table 10: Diabetic Retinopathy / Pramehaj Netragat Vyaadhi)",
+    "verified_target": "Table 10: Pramehaj Netragat Vyaadhi (Diabetic Retinopathy) -> Heerak Rasayan 1-0-0",
+    "retrieved_pages": [
+      3,
+      6,
+      10
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.84,
+    "answer": "Based on the provided document excerpts, when a patient with diabetes reports blurred vision, the symptom and complication section to be consulted is **3. PRAMEHAJ NETRAGAT VYAADHI (DIABETIC RETINOPATHY)** (specifically the \"Early stage (Blurred vision, Floaters in vision)\" subcategory under Lakshanik Chikitsa) as well as the general **PRAMEH (DIABETES MELLITUS) MANAGEMENT** section for symptom-related management. \n\nBelow are the relevant clinical protocols matching the symptom of blurred vision from the document excerpts. The attending doctor should determine which protocol is appropriate based on the patient's overall clinical presentation and assessment.\n\n### Option 1: Protocol based on Pramehaj Netragat Vyaadhi (Diabetic Retinopathy) - Early Stage Management (Sunetra Rasayan)\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sunetra Rasayan | 1-0-1 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Honey+cow ghee | DM_RR_DM RR.docx | 10 |\n\n### Option 2: Protocol based on Pramehaj Netragat Vyaadhi (Diabetic Retinopathy) - Early Stage Management (Rasaka Rasayana)\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 10 |\n\n### Option 3: Protocol based on Prameh (Diabetes Mellitus) Management for Aavil Drushti (Blurred Vision)\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Niketa | 1-0-0 or 1-0-1 | Not specified | Vyanodaan kal (once or twice a day after food) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D11",
+    "question": "A 58-year-old patient with diabetes has kidney damage and a GFR of 75. Which nephropathy stage applies according to the guideline?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 15 (Table 6/7: Diabetic Nephropathy Stage 2 GFR 60-89)",
+    "verified_target": "Table 6/7: Stage 2 Diabetic Nephropathy (GFR 60-89) -> Zincare, Sannidha Rasayan",
+    "retrieved_pages": [
+      3,
+      6
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.11,
+    "answer": "Based on the provided document excerpts, a patient with kidney damage and a GFR of 75 falls under **Mutraghaat/Mutravah Srotas Vyadhi-Upadrav (Diabetic Nephropathy) Stage 2**, which is defined as kidney damage with some loss of function and a GFR of 60–89% (with creatinine 2 to 4) [Excerpt 2, Excerpt 5]. \n\nBelow are the relevant guideline sections and protocols associated with Diabetic Nephropathy Stage 2 from the document excerpts. The attending doctor or physician should determine the appropriate protocol based on the patient's overall clinical presentation and assessment.\n\n### Protocol Options for Diabetic Nephropathy Stage 2\n\n#### Option 1: Zincare Protocol (Stage 2)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | 2-2-2 | Three times daily | Three times a day after food | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n\n#### Option 2: Sannidha Rasayan Protocol (Stage 2)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 2-0-2 | Twice daily | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n\n#### Option 3: Rasaka Rasayana Protocol (Stage 2)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Rasaka Rasayana | 1-0-1 | Twice daily | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey / warm water | DM_RR_DM RR.docx | 6 |\n\n#### Option 4: Urokine Protocol (Stage 2)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Urokine | 1-0-1 | Twice daily | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n\n#### Option 5: Lavan & Ayukshar Recommendations (Stage 2)\n| CLINICAL PARAMETER / TOPIC | DETAILS FROM UPLOADED PDF | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- |\n| Lavan | Replace table salt with it. Use it as per the need while cooking. | DM_RR_DM RR.docx | 6 |\n| Ayukshar | 5gm per 1 litre of water (Use this water only when the patient consumes water). | DM_RR_DM RR.docx | 6 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D12",
+    "question": "A 62-year-old patient with diabetes has kidney damage and a GFR of 45. Which nephropathy stage and guidance apply?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 15–16 (Table 7: Diabetic Nephropathy Stage 3 GFR 30-59)",
+    "verified_target": "Table 7: Stage 3 (GFR 30–59%, Creatinine 4 to 6) -> Zincare 2-2-2, Sannidha Rasayan 2-0-2",
+    "retrieved_pages": [
+      3,
+      6
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.09,
+    "answer": "Based on the provided document excerpts, a GFR of 45 corresponds to **Stage 2 Diabetic Nephropathy** (defined as kidney damage with some loss of function and a GFR of 60–89% as listed in the broad headings, though specific ranges for GFR tiers are detailed in the document text under Stage 2). \n\nAs a clinical decision support tool, the attending physician should determine the appropriate management based on the patient's overall clinical presentation. The protocol options available in the document for Diabetic Nephropathy are detailed below:\n\n### Protocol Option: Stage 2 Diabetic Nephropathy (GFR 60–89% / Document-specified Stage 2)\n\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | 2-2-2 | Three times a day | Three times a day after food | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n| Sannidha Rasayan | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey / warm water | DM_RR_DM RR.docx | 6 |\n| Urokine | 1-0-1 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n| Lavan | Replace table salt with it. Use it as per the need while cooking | Not specified | Replace table salt with it. Use it as per the need while cooking | Not specified | Replace table salt with it. Use it as per the need while cooking | DM_RR_DM RR.docx | 6 |\n| Ayukshar | 5gm per 1litre water | Not specified | When patient consume water, it is advisable to use this water only. | Not specified | Use it in drinking water | DM_RR_DM RR.docx | 6 |\n\n*(Note: If the patient has a known history of hypertension (Rasaabhinodan-vruddhi), additional guideline medications such as Sutendra Rasayana and Normoten are also listed under the Mutraghaat/Mutravah Srotas Vyadhi-Upadrav table matrix on page 6.)*\n\n**Attending Doctor Notice:** The attending physician should evaluate the patient's complete clinical profile, symptoms (such as Agnimandyata, Shoth, Aavil mutrata, Ayaasen shwas, Hrullas), and exact laboratory findings to determine the most appropriate therapeutic protocol.",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D13",
+    "question": "A 55-year-old patient with diabetes has hypertension and renal complications. Which complication-management sections are relevant?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 15–16 (Table 6: Mutraghaat/Hypertension Rasaabhinodan-vruddhi)",
+    "verified_target": "Table 6: Rasaabhinodan-vruddhi (K/C/O Hypertension) -> Sutendra Rasayana 1-0-0 or 1-0-1",
+    "retrieved_pages": [
+      1,
+      3,
+      6
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.63,
+    "answer": "Based on the provided document excerpts, the relevant complication-management section is **MUTRAGHAAT/MUTRAVAH SROTAS VYADHI-UPADRAV (DIABETIC NEPHROPATHY)**, which includes specific protocols for patients with hypertension (`Rasaabhinodan-vruddhi (K/C/O Hypertension)`) as well as stages of kidney damage (Stage 1 and Stage 2) [Source: DM_RR_DM RR.docx, Page: 6]. \n\nSince the patient presents with a history of diabetes, hypertension, and renal complications, the attending doctor/physician should determine which protocol is appropriate based on the patient's overall clinical presentation and assessment. Below are the matching protocols for hypertension and diabetic nephropathy tiers found in the document:\n\n### Option 1: Protocol for Rasaabhinodan-vruddhi (K/C/O Hypertension)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sutendra Rasayana | 1-0-0 or 1-0-1 | Not specified | Rasayan Kal (Early morning on empty stomach) or Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey | DM_RR_DM RR.docx | 6 |\n| Normoten | 1-0-1 or 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Not specified | DM_RR_DM RR.docx | 6 |\n\n### Option 2: Protocols for Diabetic Nephropathy Stages (Kidney Damage)\n\n#### Stage 1 (Kidney damage present, normal kidney function, GFR ≥ 90%, creatinine ~2)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n| Sannidha Rasayan | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey / warm water | DM_RR_DM RR.docx | 6 |\n| Lavan | Replace table salt with it. Use it as per the need while cooking | Not specified | Replace table salt with it. Use it as per the need while cooking | Not specified | Replace table salt with it. Use it as per the need while cooking | DM_RR_DM RR.docx | 6 |\n\n#### Stage 2 (Kidney damage with some loss of function, GFR 60–89%, creatinine 2 to 4)\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | 2-2-2 | Not specified | Three times a day after food. | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n| Sannidha Rasayan | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n| Rasaka Rasayana | 1-0-1 | Not specified | Rasayan kal and Nisha kal (Early morning on empty stomach and at bedtime) | Not specified | Honey / warm water | DM_RR_DM RR.docx | 6 |\n| Urokine | 1-0-1 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 6 |\n| Lavan | Replace table salt with it. Use it as per the need while cooking | Not specified | Replace table salt with it. Use it as per the need while cooking | Not specified | Replace table salt with it. Use it as per the need while cooking | DM_RR_DM RR.docx | 6 |\n| Ayukshar | 5gm per 1litre water | Not specified | When patient consume water, it is advisable to use this water only. | Not specified | Use it in drinking water | DM_RR_DM RR.docx | 6 |",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D14",
+    "question": "A 48-year-old patient with diabetes has an unhealed wound. Which complication-specific guidance should be consulted?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 9 (Table 5: Putimansa / Gangrene / Diabetic Foot Ulcer)",
+    "verified_target": "Table 5: Putimansa (Gangrene) Risky Patient / Unhealed wound -> Meha Rasayan 1-0-0, Zincare 2-0-2",
+    "retrieved_pages": [
+      1,
+      3,
+      10
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 3.12,
+    "answer": "Based on the uploaded document excerpts, for a patient presenting with an unhealed wound (Vidradhi, Dushtavrana) in the context of Prameh (Diabetes Mellitus) management, the guidance and protocols under the **PRAMEH (DIABETES MELLITUS) MANAGEMENT** section should be consulted. \n\nThe document provides multiple medication options for this condition. As a clinical decision support tool, the exact protocols corresponding to the available entries for an unhealed wound are outlined below. The attending physician should determine the appropriate protocol based on the patient's overall clinical assessment.\n\n### Protocol Option 1: Dasma\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Dasma | 1-0-0 | Not specified | Rasayan Kal (Early morning on empty stomach) | Not specified | Lemon juice | DM_RR_DM RR.docx | 3 |\n\n### Protocol Option 2: Meha Rasayan\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Meha Rasayan | 0-0-1 | Not specified | Nisha Kal (At bedtime) | Not specified | Honey/ warm water | DM_RR_DM RR.docx | 3 |\n\n### Protocol Option 3: Zincare\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Zincare | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n\n### Protocol Option 4: Sannidha Rasayan\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Sannidha Rasayan | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n\n### Protocol Option 5: Kanchanar Guggul 250mg\n| MEDICINE / FORMULATION | DOSE / MATRA | FREQUENCY | TIMING / AUSHADH KAL | DURATION | ANUPANA / SAHAPAAN | SOURCE DOCUMENT | PAGE |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Kanchanar Guggul 250mg | 2-0-2 | Not specified | Vyanodaan kal (twice a day after food) | Not specified | Warm water | DM_RR_DM RR.docx | 3 |\n\n*Note: The attending doctor/physician should determine which protocol or combination of protocols is appropriate based on the patient's overall clinical presentation and assessment.*",
+    "verdict": "PASS"
+  },
+  {
+    "id": "D15",
+    "question": "A 60-year-old patient with diabetes has multiple complications, but the stages are unknown. Which complication sections should be reviewed?",
+    "target_document": "DM RR(7).docx",
+    "expected_page": "Page 14–25 (Tables 6–13: Secondary Prevention & Complication Protocols)",
+    "verified_target": "Tables 6-13: Comprehensive Upadrava guidance (Nephropathy, Retinopathy, Neuropathy, Cardiovascular)",
+    "retrieved_pages": [
+      1,
+      3,
+      6,
+      10
+    ],
+    "retrieved_docs": [
+      "DM_RR_DM RR.docx"
+    ],
+    "found_in_pdf": true,
+    "duration_seconds": 2.75,
+    "answer": "Based on the provided document excerpts, when reviewing treatment guidelines for diabetes mellitus complications (Prameh Upadrav) where stages or specific complications are part of the clinical picture, the document presents specific sections and matrix tables. \n\nSpecifically, **Table Matrix 6** applies to:\n- **Mutraghaat / Mutravah Srotas Vyadhi-Upadrav (Diabetic Nephropathy)**, including stages associated with *Rasaabhinodan-vruddhi* (K/C/O Hypertension), Stage 1, and Stage 2 kidney damage.\n\nAdditionally, other sections and categories mentioned in the document matrix include:\n- **Prameh (Diabetes Mellitus) Management** (covering symptoms such as *Daurbalya-Alasya*, *Madhurasyata*, *Aruchi*, and warning signs like *Aayasen Shwas*).\n- **Pramehaj Netragat Vyaadhi (Diabetic Retinopathy)** (which includes considerations if the patient also has nephropathy).\n\n### Clinical Decision Support Note\nSince the patient's specific complication stages are currently unknown, the attending physician should review the relevant guideline sections and tables above, perform a detailed clinical evaluation, and determine the appropriate patient-specific protocol once the exact stages are established.",
+    "verdict": "PASS"
+  }
+]
